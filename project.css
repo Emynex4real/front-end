@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2c3249;
+    
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; color: white;
+    position: relative;
+    margin-top: 10px;
+
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: #2c3249;
+}
+.big-container{
+    position: relative;
+    margin-top: 10vh;
+    /* display: none; */
+    /* z-index: -1; */
+    /* margin-bottom: 50px; */
+    
+}
+
+.container{
+    border-radius: 20px;
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    
+}
+
+.first-container{
+    width: 50%;
+    position: relative;
+    left: 15px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.second-container img{
+    width: 100%;
+    border-radius:10px;
+}
+
+.bold {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal; 
+}
+
+.head{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.text{
+    font-size: 0.7rem;
+    line-height: 2;
+}
+
+.bullet i{
+    color: #ff4400ca;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+.email{
+    font-size: 0.65rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+input{
+    width: 85%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.717);
+}
+.email-address{
+    margin-bottom: 15px;
+}
+
+.submit{
+    background-color: #2c3249;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #ff4400ca;
+    transition: 0.5s;
+}
+.success-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    top: 90px;
+    z-index: 10;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    display:  none;
+    
+}
+
+.active{
+    display: flex;
+}
+.mini-container{
+    width: 400px;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 40px;
+}
+
+.mini-container i{
+    font-size: 3.5rem;
+    color: #ff4400ca;
+}
+
+.success-head{
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.success-text{
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.bold{
+    font-weight: bolder;
+}
+.bullet{
+    display: flex;
+    gap: 3px;
+    align-items: baseline;
+}
+
+.dismiss-button{
+    padding: 15px 0;
+    background-color: #2c3249;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: .8rem;
+}
+
+.dismiss-button:hover{
+    background-color: #ff4400ca;
+    transition: 0.5s;
+}
+.unactive{
+    visibility: hidden;
+}
+
+
+
+@media(max-width:700px) {
+    .container{
+    border-radius: 0px;
+    width: 270px;
+    margin: auto;
+    background-color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+    }
+
+    .second-container img{
+        height: 200px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .first-container{
+        width: 85%;
+        margin: auto;
+        position: relative;
+        left: 15px;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .head{
+        font-size: 1.7rem;
+    }
+
+   
+
+    .submit{
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    .success-container{
+        width: 270px;
+        border-radius: 0;
+        margin-top: 0px;
+        position: absolute;
+        background-color: white;
+        /* display:  none; */
+    }
+
+    .mini-container{
+        width: 100%;
+        margin: auto;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 40px;
+    }
+    
+    .mini-container i{
+        font-size: 3.5rem;
+        color: #ff4400ca;
+    }
+
+    .success-head{
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .success-text{
+        font-size: .8rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 100px;
+    }
+    .dismiss-button:hover{
+        background-color: #ff4400ca;
+        transition: 0.5s;
+    }
+    .unactive{
+        visibility: hidden;
+    }
+}
